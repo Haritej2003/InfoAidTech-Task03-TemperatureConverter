@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="temp2.css">
+    <script src="temp.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Temperature converter</h1>
+        </div>
+        <div id="celsius">
+            <input type="number" 
+             placeholder="Celsius">
+             <span class="units">&deg;C</span>
+             
+        </div>
+        <div id="fahrenheit">
+            <input type="number" 
+            placeholder="Fahrenheit">
+            <span class="units">&deg;F</span>
+        </div>
+        <div id="kelvin">
+            <input type="number" 
+             placeholder="Kelvin">
+             <span class="units">&deg;K</span>
+        </div>
+       <div class="convert">
+        <h1 align="center">Convert To</h1>
+        <form class="convertto">
+            <input type="checkbox" name="degree" id="Celsius" value="celsius">
+            <label for="Celsius">Celsius</label>
+            <input type="checkbox" name="degree" id="Fahrenheit" value="fahrenheit">
+            <label for="Fahrenheit">Fahrenheit</label>
+            <input type="checkbox" name="degree" id="Kelvin" value="kelvin">
+            <label for="Kelvin">Kelvin</label>
+           
+        </form>
+       </div>
+      <div class="button">
+            <button onclick="convertTemperature()">Convert</button>
+            <button onclick="clearFields()">All Clear</button>
+        </div>
+    </div>
+   
+</body>
+</html>
